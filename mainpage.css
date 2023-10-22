@@ -1,0 +1,104 @@
+@import "searchbox.css";
+
+
+body{
+  background-color: #cbd0d8;
+}
+
+.header {
+  background-color: #333D51;
+  display: grid;
+  grid-template-areas:
+  "headline . ."
+  "headline . searchbox";
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  margin-bottom: 15px;
+}
+
+.logo {
+  grid-area: headline;
+  text-align: left;
+  padding: 20px;
+}
+
+.searchBox {
+  grid-area: searchbox;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.card {
+  background-color: #F4F3EA;
+  display: inline-grid;
+  grid-template-areas:
+    "image title . rate"
+    "image overview overview overview"
+    "image overview overview overview"
+    "image overview overview overview";
+  grid-template-columns: 170px 1fr 1.5fr 0.5fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 80%;
+  height: 250px;
+  float: center;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+  border-radius: 3cap;
+  cursor: pointer;
+}
+
+.movie_img {
+  border-radius: 3cap;
+  padding: 3%;
+  text-align: center;
+  max-width: 160px;
+  max-height: 240px;
+}
+
+.movie_img_div {
+  text-align: center;
+  grid-area: image;
+}
+
+.name,
+.rate{
+  font-weight: bold;
+  margin-top: 2%;
+  color: black;
+}
+
+.summary {
+  grid-area: overview;
+  text-align: start;
+  font-size: 1em;
+  color: black;
+  padding: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  background-color: white;
+  border-radius: 2cap;
+}
+
+.name {
+  text-align: left;
+  grid-area: title;
+  width: max-content;
+  font-size: 1.5em;
+  padding-top: 5%;
+  padding-left: 10px;
+}
+
+.rate {
+  text-align: center;
+  grid-area: rate;
+  font-size: 1em;
+  padding-top: 15%;
+  margin-right: 2%;
+}
+
+#moovieLogo {
+  cursor: pointer;
+}
