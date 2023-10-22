@@ -57,10 +57,6 @@ function loadCard (e) {
 };
 loadCard();
 
-function hello() {
-  console.log('hello');
-}
-
 searchBtn.addEventListener('mousemove', (e) => {
   e.preventDefault();
   searchForm.classList.add("opened");
