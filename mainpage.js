@@ -6,7 +6,7 @@ let searchInput = document.getElementById("searchInput");
 let moovieLogo = document.getElementById("moovieLogo");
 searchBtn.addEventListener("click", loadCard);
 moovieLogo.addEventListener("click", function(){
-  location.href = 'mainpage.html';
+  location.href = 'index.html';
 });
 
 const options = {
